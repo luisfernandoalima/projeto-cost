@@ -1,5 +1,17 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "id": "6cea",
+      "name": "Sistema de Entregas",
+      "budget": "10000",
+      "category": {
+        "id": "Sistema",
+        "name": "Sistema"
+      },
+      "cost": 0,
+      "services": []
+    }
+  ],
   "categories": [
     {
       "id": "1",
