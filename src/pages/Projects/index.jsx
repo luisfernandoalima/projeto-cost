@@ -5,11 +5,13 @@ import { Message } from "../../components/layouts/Message";
 import { Container } from "../../components/layouts/Container";
 import { LinkButton } from "../../components/layouts/LinkButton";
 import { ProjectCard } from "../../components/Project/Card";
+import { Loading } from "../../components/layouts/Loading";
 
 import styles from "./Projects.module.css";
 
 export const Projects = () => {
   const [projects, setProjects] = useState([]);
+  const [removeLoading, setRemoveLoading] = useState(false)
 
   useEffect(() => {
     fetch("http://localhost:5000/projects", {
@@ -22,6 +24,7 @@ export const Projects = () => {
       .then((data) => {
         console.log(data);
         setProjects(data);
+        setRemoveLoading(true)
       })
       .catch((err) => console.log(err));
   }, []);
@@ -50,7 +53,10 @@ export const Projects = () => {
               key={project.id}
             />
           ))}
-
+          {!removeLoading && <Loading/>}
+          {removeLoading && projects.length === 0 && (
+            <p>Não há projetos cadastrados</p>
+          )}
         {/* <p>Projetos...</p> */}
       </Container>
     </div>
