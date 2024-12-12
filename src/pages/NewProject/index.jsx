@@ -18,12 +18,13 @@ export const NewProject = () => {
       headers: {
         "Content-type": "application/json",
       },
-      body: JSON.stringify(project)
+      body: JSON.stringify(project),
     })
       .then((response) => response.json())
-      .then((data) =>
-        navigate("/project", { message: "Projeto criado com sucesso!" })
-      )
+      .then((data) => {
+        const state = { message: "Projeto criado com sucesso!" };
+        navigate("/projects", { state });
+      })
       .catch((err) => console.log(err));
   };
 

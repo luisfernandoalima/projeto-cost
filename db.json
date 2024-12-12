@@ -1,24 +1,12 @@
 {
-  "projects": [
-    {
-      "id": "40fc",
-      "name": "LuisinhoDoGrau",
-      "budget": "6000",
-      "category": {
-        "id": "Sistema",
-        "name": "Sistema"
-      },
-      "cost": 0,
-      "services": []
-    }
-  ],
+  "projects": [],
   "categories": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Infra"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Sistema"
     }
   ]
