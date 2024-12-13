@@ -6,6 +6,7 @@ import { Company } from "./pages/Company";
 import { Contact } from "./pages/Contact";
 import { NewProject } from "./pages/NewProject";
 import { Projects } from "./pages/Projects";
+import { Project } from "./pages/Project/indes";
 // Components
 import { Container } from "./components/layouts/Container";
 import { Navbar } from "./components/layouts/Navbar";
@@ -19,8 +20,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/company" element={<Company />} />
-          <Route path="/projects" element={<Projects/>}/>
+          <Route path="/projects" element={<Projects />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="/project/:id" element={<Project />} />
           <Route path="/newproject" element={<NewProject />} />
         </Routes>
       </Container>

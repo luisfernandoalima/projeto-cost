@@ -1,5 +1,17 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "id": "143e",
+      "name": "Sistema de Entregas",
+      "budget": "500",
+      "category": {
+        "id": "Sistema",
+        "name": "Sistema"
+      },
+      "cost": 0,
+      "services": []
+    }
+  ],
   "categories": [
     {
       "id": "1",
