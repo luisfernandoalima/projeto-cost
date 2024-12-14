@@ -8,8 +8,21 @@
         "id": "Sistema",
         "name": "Sistema"
       },
-      "cost": 0,
-      "services": []
+      "cost": 500,
+      "services": [
+        {
+          "name": "Sistema de Entregas",
+          "cost": "300",
+          "description": "Tenso",
+          "id": "25a7c00e-71e8-43a8-9232-e571325c0313"
+        },
+        {
+          "description": "Tenso",
+          "name": "Sistema de Entregas",
+          "cost": "200",
+          "id": "59b4e116-b980-4224-84aa-90dc0733be55"
+        }
+      ]
     }
   ],
   "categories": [
